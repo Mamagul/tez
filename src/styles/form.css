@@ -1,57 +1,11 @@
-/* .form-section {
-  background: rgba(40, 40, 41, 1);
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  height: 70%;
-}
-.getinTouch {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  width: 70%;
-  flex-direction: column;
-  justify-content: center;
-}
-.getinTouch img {
-  display: flex;
-  justify-content: end;
-  width: 40%;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 60%;
-}
-
-input {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-button {
-  background: #333;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  border-radius: 4px;
-}
-
-button:hover {
-  background: #0e5716;
-} */
 .form-section {
   background-color: #222; /* фон всей секции */
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
-  height: 30vh;
+  height: 70vh;
   position: relative;
+  z-index: 2;
 }
 
 .form-container {
@@ -84,8 +38,7 @@ form {
   gap: 1rem;
 }
 
-input[type="text"],
-input[type="email"] {
+input {
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -108,7 +61,7 @@ input[type="email"] {
   text-decoration: underline;
 }
 
-button {
+.submitBtn {
   padding: 1rem;
   background-color: #222;
   color: #fff;
@@ -119,7 +72,7 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+.submitBtn:hover {
   background-color: #444;
 }
 
@@ -129,22 +82,27 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-image: url("../images/building.png");
-  background-position: center; /* сдвиг влево */
-  background-repeat: no-repeat; /* чтобы не повторялась */
+  /* background-position: center; сдвиг влево */
+  background-position-x: -300px;
+  background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
   background-color: transparent;
+  position: relative;
+  left: 0;
+  right: 100px;
+  top: 1;
+  bottom: 0;
+  z-index: 2;
 }
 
 .form-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  transform: translate(-50px, -130px);
+  /* transform: translate(-50px, -130px); */
   position: absolute;
-  z-index: 2;
-  scale: 0.85;
-  display: none;
+  z-index: 100;
+  scale: 0.75;
 }
 
 /* Адаптив */

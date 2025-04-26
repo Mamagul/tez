@@ -67,9 +67,7 @@ export default function StayFocusedSecondPage() {
             </svg>
             <span>Track progress in real time and celebrate every win.</span>
           </p>
-          <div>
-            <Button></Button>
-          </div>
+          <Button></Button>
         </div>
         <img src={working} alt="" />
       </section>

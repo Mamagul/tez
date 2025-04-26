@@ -115,8 +115,7 @@ export default function StayFocused() {
             </p>
           </div>
           <div className="buttonWrapper">
-            <Button></Button>
-            {/* <button className="button">Order</button> */}
+            <button className="button1">Order</button>
           </div>
         </div>
       </section>

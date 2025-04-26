@@ -14,7 +14,9 @@ export default function Form() {
             <label class="checkbox-wrapper">
               <input type="checkbox" />I accept <a href="#">Privacy policy</a>
             </label>
-            <button type="submit">SUBMIT FORM</button>
+            <button className="submitBtn" type="submit">
+              SUBMIT FORM
+            </button>
           </form>
         </div>
         <div class="form-image">
