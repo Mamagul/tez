@@ -1,0 +1,189 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #222222;
+  color: white;
+  padding: 1rem 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
+  display: flex;
+  /* width: 60.25vw; */
+  width: 100%;
+}
+.containerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background: #222;
+  color: white;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+.hero img {
+  width: 39.75vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 51;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerStay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stayFocused {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  margin-top: 200px;
+}
+
+.getOrder {
+  max-width: 800px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.getOrder h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.enumeration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.getOrder p {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.getOrder svg {
+  flex-shrink: 0;
+  width: 39px;
+  height: 37px;
+  margin-top: 4px;
+}
+.getOrder span {
+  margin-top: 8px;
+}
+.button {
+  width: 200px;
+  height: 7vh;
+  background: #fff;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.button :hover {
+  background-color: green;
+}
+
+/* 📱 Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .containerNav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .stayFocused {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .getOrder {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    width: 90vw;
+    height: 6vh;
+  }
+}
+
+/* 💻 Планшеты (от 769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-list {
+    gap: 3rem;
+  }
+
+  .hero img {
+    width: 100vw;
+  }
+
+  .button {
+    width: 20vw;
+  }
+}

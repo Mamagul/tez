@@ -1,0 +1,105 @@
+/* .site-header {
+  position: sticky;
+  top: 0;
+  background: #222222;
+  color: white;
+  padding: 1rem 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  display: flex;
+  width: 60.25vw;
+}
+.containerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffd700;
+} */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container img {
+  width: 30vw;
+  height: 100vh;
+  padding: 5rem 0 0 0;
+  object-fit: cover;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  width: 33vw;
+}
+.list p {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  align-items: flex-start;
+  padding: 20px 0;
+  justify-content: flex-start;
+
+  border-bottom: 2px solid #493652;
+}
+
+.list svg {
+  flex-shrink: 0;
+  width: 39px;
+  height: 37px;
+  margin-top: 4px;
+}
+.list span {
+  margin-top: 8px;
+}
+.button {
+  width: 90vw;
+  height: 6vh;
+}
+
+/* Адаптивность */
+@media (min-width: 768px) {
+  .list {
+    width: 33vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+}
